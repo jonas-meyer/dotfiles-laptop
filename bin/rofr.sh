@@ -62,7 +62,7 @@ while getopts ":hvqwcbrl" opt; do
                 rofi -sep "|" -dmenu -i -p 'System: ' "" -width 20 \
                 -hide-scrollbar -eh 1 -line-padding 4 -padding 20 -lines 5)
             case "$ANS" in
-                *Lock) betterlockscreen -l dimblur;;
+                *Lock) betterlockscreen -l dimblur ;;
                 *Suspend) systemctl suspend ;;
                 *Logout) session-logout ;;
                 *Reboot) systemctl reboot ;;
