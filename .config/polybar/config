@@ -43,5 +43,6 @@ module-margin-right = 3
 
 modules-left =  i3
 modules-center = clock
-modules-right = volume network battery 
+modules-right = volume network battery backlight
 
+tray-position = ""

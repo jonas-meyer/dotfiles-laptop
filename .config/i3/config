@@ -81,7 +81,7 @@ exec_always --no-startup-id numlockx on
 exec_always --no-startup-id nitrogen --restore
 exec_always --no-startup-id ~/.config/polybar/launch_polybarv2.sh
 exec_always --no-startup-id xrdb -load ~/.Xresources
-exec_always --no-startup-id pkill trayer; trayer --edge bottom --align left --heighttype pixel --height 18 --widthtype request --SetDockType false --expand true --transparent true --alpha 255
+#exec_always --no-startup-id pkill trayer; trayer --edge bottom --align left --heighttype pixel --height 18 --widthtype request --SetDockType false --expand true --transparent true --alpha 255
 
 # run once
 exec --no-startup-id i3-msg 'workspace 10:; append_layout ~/.config/i3/workspace10.json;'
@@ -96,6 +96,7 @@ exec --no-startup-id signal-desktop
 exec --no-startup-id setxkbmap eu
 exec --no-startup-id redshift -l 52.5200:13.4050
 exec --no-startup-id xss-lock -- betterlockscreen -l dimblur
+exec --no-startup-id blueman-applet
 
 #assign [class="^Rambox"] $WS8
 #assign [class="^Signal"] $WS8
@@ -301,4 +302,5 @@ for_window [class="(?i)trayer"] border pixel 0
 
 # start on main workspaces when reloading i3 (keep me at the bottom)
 #exec_always --no-startup-id i3-msg 'workspace $WS5, workspace $WS1'
+#
 
