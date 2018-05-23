@@ -181,6 +181,7 @@ Plug 'w0rp/ale'
 Plug 'jiangmiao/auto-pairs'
 Plug 'scrooloose/nerdtree'
 Plug 'godlygeek/tabular'
+Plug 'JamshedVesuna/vim-markdown-preview'
 call plug#end()
 
 "-----------------------------------------------------------
@@ -290,4 +291,5 @@ set fileencoding=utf-8
 "-----------------------------------------------------------------------
 "More wack changes
 let g:netrw_cursorline=0
+let vim_markdown_preview_browser='Firefox'
 

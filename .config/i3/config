@@ -93,7 +93,7 @@ exec --no-startup-id lxpolkit
 exec --no-startup-id xbanish -s -t 5000
 exec --no-startup-id rambox
 exec --no-startup-id signal-desktop
-exec --no-startup-id setxkbmap eu
+exec --no-startup-id setxkbmap -option caps:swapescape
 exec --no-startup-id redshift -l 52.5200:13.4050
 exec --no-startup-id xss-lock -- betterlockscreen -l dimblur
 exec --no-startup-id blueman-applet
