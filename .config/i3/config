@@ -37,7 +37,7 @@ client.background       $bg
 for_window [class="^.*"] border pixel 2, title_format "<b> %class >> %title </b>"
 
 # gaps
-gaps inner 8
+gaps inner 6
 gaps outer 0
 
 # font
@@ -97,6 +97,8 @@ exec --no-startup-id setxkbmap -option caps:swapescape
 exec --no-startup-id redshift -l 52.5200:13.4050
 exec --no-startup-id xss-lock -- betterlockscreen -l dimblur
 exec --no-startup-id blueman-applet
+exec --no-startup-id xinput --se-prop 10 'libinput Accel Speed' 0.4
+exec --no-startup-id libinput-gestures-setup start
 
 #assign [class="^Rambox"] $WS8
 #assign [class="^Signal"] $WS8
