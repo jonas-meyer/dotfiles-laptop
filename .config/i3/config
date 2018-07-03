@@ -102,6 +102,10 @@ exec --no-startup-id libinput-gestures-setup start
 
 #assign [class="^Rambox"] $WS8
 #assign [class="^Signal"] $WS8
+exec --no-startup-id keepassxc
+for_window [class="keepassxc"] move window to scratchpad
+bindsym $mod+p [class="keepassxc"] scratchpad show
+bindsym $mod+Shift+p [class="keepassxc"] move scratchpad
 
 ###################################################################################################
 #################                          Bindings                               ##################
@@ -214,7 +218,7 @@ bindsym $Mod+Down  focus down
 bindsym $Mod+Up    focus up
 bindsym $Mod+Right focus right
 
-bindsym $Mod+p     focus parent
+#bindsym $Mod+p     focus parent
 bindsym $Mod+c     focus child
 
 # move focused window
