@@ -181,7 +181,7 @@ Plug 'w0rp/ale'
 Plug 'jiangmiao/auto-pairs'
 Plug 'scrooloose/nerdtree'
 Plug 'godlygeek/tabular'
-Plug 'JamshedVesuna/vim-markdown-preview'
+Plug 'shime/vim-livedown'
 call plug#end()
 
 "-----------------------------------------------------------

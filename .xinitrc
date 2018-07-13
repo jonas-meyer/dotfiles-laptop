@@ -44,3 +44,6 @@ case $session in
     openbox|openbox-session) exec openbox-session ;;
     *) exec "$1"
 esac
+
+#Start lockscreen on startup
+exec betterlockscreen
