@@ -19,3 +19,5 @@ Bar Manager: polybar
 
 
 Application Launcher: rofi
+
+![Screenshot of Environment](https://github.com/jonas-meyer/dotfiles-laptop/blob/master/2018-07-13-104455_1920x1080_scrot.png)
