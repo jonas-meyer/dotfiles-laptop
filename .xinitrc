@@ -35,6 +35,7 @@ kbdrate -d 400 -r 50
 xset r rate 400 50
 xset s 3600 3600
 
+#Start lockscreen on startup
 # start the session
 case $session in
     i3|i3wm)    exec i3 ;;
@@ -45,5 +46,4 @@ case $session in
     *) exec "$1"
 esac
 
-#Start lockscreen on startup
-exec betterlockscreen
+

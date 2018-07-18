@@ -49,7 +49,7 @@ while getopts ":hvqwcbrl" opt; do
             rofi -modi "clipboard:greenclip print" -padding 50 \
                 -line-padding 4 -show "clipboard:greenclip print" \
                 -hide-scrollbar
-            ;;
+           ;;
         b)
             surfraw -browser="$BROWSER" $(sr -elvi | awk -F'-' '{print $1}' \
                 | sed '/:/d' | awk '{$1=$1};1' | rofi -hide-scrollbar \

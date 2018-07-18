@@ -99,6 +99,7 @@ exec --no-startup-id xss-lock -- betterlockscreen -l dimblur
 exec --no-startup-id blueman-applet
 exec --no-startup-id xinput --se-prop 10 'libinput Accel Speed' 0.4
 exec --no-startup-id libinput-gestures-setup start
+exec --no-startup-id betterlockscreen -l dimblur
 
 #assign [class="^Rambox"] $WS8
 #assign [class="^Signal"] $WS8
@@ -231,7 +232,11 @@ bindsym $Mod+Shift+$right move right 10px
 bindsym $Mod+Shift+Up    move up    10px
 bindsym $Mod+Shift+Down  move down  10px
 bindsym $Mod+Shift+Left  move left  10px
-bindsym $Mod+Shift+Right move right 10px
+bindsym $Mod+Shift+Right move right 10px 
+
+# Workspace next
+bindsym $Mod+Control+1 workspace prev
+bindsym $Mod+Control+2 workspace next
 
 # Size
 bindsym Mod1+Up     resize shrink height 10 px or 1 ppt
@@ -244,8 +249,8 @@ bindcode Mod1+23 layout toggle tabbed split
 bindcode $Mod+23 layout toggle splitv splith
 
 # switch to workspace with urgent window
-for_window [urgent="latest"] focus
-focus_on_window_activation   focus
+#for_window [urgent="latest"] focus
+#focus_on_window_activation   focus
 
 # mouse focus off
 focus_follows_mouse no
