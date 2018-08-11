@@ -250,6 +250,9 @@ bindsym $Mod+Shift+s layout stacking
 bindsym $Mod+Shift+h layout toggle split
 default_orientation horizontal
 
+# mouse focus off
+focus_follows_mouse no
+
 ######################################################
 ###############      Border & Gaps     ###############
 ######################################################
