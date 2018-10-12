@@ -82,6 +82,7 @@ exec --no-startup-id setxkbmap eu -option caps:swapescape
 exec --no-startup-id redshift -l 52.5200:13.4050
 exec --no-startup-id xinput --se-prop 10 'libinput Accel Speed' 0.4
 exec --no-startup-id dropbox
+exec --no-startup-id ~/.config/xob/./pulse-volume-watcher.py | xob -s i3
 exec --no-startup-id xss-lock -- betterlockscreen -l dim
 
 # Keepassxc in Background
@@ -262,6 +263,8 @@ new_float normal
 hide_edge_borders both
 popup_during_fullscreen smart
 bindsym $Mod+shift+b border toggle
+smart_borders on
+smart_gaps on
 
 # changing border style
 bindsym $Mod+n border normal

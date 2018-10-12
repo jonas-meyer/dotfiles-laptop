@@ -35,7 +35,7 @@ monitor =
 
 modules-left   = i3 
 modules-center = 
-modules-right  = volume-bar wireless-network battery date
+modules-right  = wireless-network battery date
 
 
 ;=====================================================
